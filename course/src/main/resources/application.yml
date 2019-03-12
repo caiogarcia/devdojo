@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: couse
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:mysql://localhost:4406/devdojo?allowPublicKeyRetrival=true&sslMode=DISABLED&useTimezone=true&serverTimezone=UTC
+    username: root
+    password: root
+    

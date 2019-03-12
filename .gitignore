@@ -1,3 +1,14 @@
+# eclipse files
+.classpath
+.factorypath
+.project
+mvnw
+mvnw.cmd
+.apt_generated
+.apt_generated_tests
+.mvn
+.settings
+
 # Compiled class file
 *.class
 
