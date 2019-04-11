@@ -9,21 +9,22 @@
 		<relativePath>../</relativePath> <!-- lookup parent from repository -->
 	</parent>
 
-	<artifactId>course</artifactId>
+	<artifactId>gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Course</name>
+	<name>Gateway</name>
 	<description>Demo project for Spring Boot</description>
 
 	<dependencies>
+
 		<dependency>
-			<groupId>com.caiogarcia.devdojo</groupId>
-			<artifactId>core</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
+
 	</dependencies>
 
 	<build>
-		<finalName>Course</finalName>
+		<finalName>Gateway</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

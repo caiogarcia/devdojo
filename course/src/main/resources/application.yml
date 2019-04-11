@@ -1,9 +1,9 @@
 server:
-  port: 8080
+  port: 8082
   
 spring:
   application:
-    name: couse
+    name: course
   jpa:
     show-sql: false
     hibernate:
@@ -17,4 +17,12 @@ spring:
     url: jdbc:mysql://localhost:4406/devdojo?allowPublicKeyRetrival=true&sslMode=DISABLED&useTimezone=true&serverTimezone=UTC
     username: root
     password: root
-    
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+    fetch-registry: true
+    registry-with-eureka: true
